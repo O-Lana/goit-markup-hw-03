@@ -5,6 +5,31 @@
   --color-title: #212121;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 3px solid brown;
+}
 .list {
   list-style: none;
 }
@@ -18,8 +43,33 @@ body {
   font-weight: 400;
   color: #757575;
 }
+/* -------------------------------COMPONENTS---------------------------------- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* -------------------------------HEADER---------------------------------- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  /* background-color: brown; */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  margin-right: 93px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -30,6 +80,14 @@ body {
 
 .logo-style {
   color: var(--accent-color);
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .menu-link {
@@ -48,6 +106,15 @@ body {
 
 .menu-link.current {
   color: var(--accent-color);
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contat-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-us {
@@ -70,6 +137,9 @@ body {
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
@@ -81,14 +151,20 @@ body {
 }
 
 .modal-btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
   background: var(--accent-color);
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
@@ -100,6 +176,15 @@ body {
 }
 
 /* -------------------------------Особенности---------------------------------- */
+
+.features-list {
+  display: flex;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-subtitle {
   font-family: var(--main-font);
   font-weight: 700;
