@@ -436,6 +436,10 @@ body {
   margin-top: 30px;
 }
 
+.gallery-img {
+  display: block;
+}
+
 .img-text-container {
   padding: 20px 24px;
   background: #ffffff;
